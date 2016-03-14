@@ -40,7 +40,7 @@ void draw() {
      pushMatrix();
      translate(tobj.getScreenX(width), tobj.getScreenY(height));
      rotate(0-tobj.getAngle());
-     image(pieces.get(i), 0, 0, 100, 100);
+     image(pieces.get(tobj.getSymbolID()), 0, 0, 100, 100);
      popMatrix();
      println("Position: "+tobj.getSymbolID(), tobj.getScreenX(width), tobj.getScreenY(height));
    }
