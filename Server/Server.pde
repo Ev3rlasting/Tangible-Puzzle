@@ -1,24 +1,20 @@
-  
 import processing.net.*;
-
 Server myServer;
-int val = 0;
 
 void setup() {
-  size(200, 200);
-  // Starts a myServer on port 5204
-  myServer = new Server(this, 5204); 
+  myServer = new Server(this, 2333); 
 }
 
-void draw() {
-  val = (val + 1) % 255;
-  background(val);
-  myServer.write(val);
-  Client thisClient = myServer.available();
-  if (thisClient !=null) {
-    String whatClientSaid = thisClient.readString();
+void draw()
+{
+  // Get the next available client
+  Client myClient = myServer.available();
+  // If the client is not null, and says something, display what it said
+  if (myClient !=null) {
+    String whatClientSaid = myClient.readString();
     if (whatClientSaid != null) {
-      println(thisClient.ip() + "t" + whatClientSaid);
+      //println(whatClientSaid);
+      myClient.write(whatClientSaid);
     } 
   } 
 }
