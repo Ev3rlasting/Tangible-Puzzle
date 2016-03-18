@@ -27,12 +27,6 @@ void setup() {
     showpic[i]=false;
   }
   println("There are "+pieces.size()+" pieces");
-  //  myClient.write("There are "+pieces.size()+" pieces");
-
-  //piece0 = loadImage("0.png");
-  //piece1 = loadImage("1.png");
-  //pieces.add(piece0);
-  //pieces.add(piece1);
 }
 
 void draw() {
