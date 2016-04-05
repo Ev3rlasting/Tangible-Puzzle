@@ -23,10 +23,10 @@ void setup() {
   
   /* create a new instance of oscP5 using a multicast socket. */
   System.setProperty("java.net.preferIPv4Stack", "true");     // disable ipv6
-  server = new OscP5(this, "239.0.0.1", 7777);
+  server = new OscP5(this, "224.0.0.1",7777);
   temp = new OscP5(this, 9999);
-  client1Address = new NetAddress("192.168.0.145", 8889);
-  client2Address = new NetAddress("127.0.0.1", 8888);
+  client1Address = new NetAddress("127.0.0.1", 63000);
+  client2Address = new NetAddress("142.58.223.198", 62000);
 }
 
 
