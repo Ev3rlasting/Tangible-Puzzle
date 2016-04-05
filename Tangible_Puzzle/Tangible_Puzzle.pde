@@ -43,19 +43,20 @@ void draw() {
   //float cur_size = cursor_size*scale_factor; 
   ArrayList<TuioObject> tuioObjectList1 = tuioClient1.getTuioObjectList();
   ArrayList<TuioObject> tuioObjectList2 = tuioClient2.getTuioObjectList();
-  println("TuioObjectlist1 has "+tuioObjectList1.size());
-  println("TuioObjectlist2 has "+tuioObjectList2.size());
+  //println("TuioObjectlist1 has "+tuioObjectList1.size());
+  //println("TuioObjectlist2 has "+tuioObjectList2.size());
   tuioObjectList1.addAll(tuioObjectList2);
   if (tuioObjectList1.size()>0) {  
-    for (int i=0; i<tuioObjectList1.size() && i<PIECE_NUMBER; i++) {
+    for (int i=0; i<tuioObjectList1.size(); i++) {
       TuioObject tobj = tuioObjectList1.get(i);
+      if(tobj.getSymbolID()>=PIECE_NUMBER){
+        break;
+      }
       pushMatrix();
       translate(tobj.getScreenX(width), tobj.getScreenY(height));  
       rotate(0-tobj.getAngle());
       //image(pieces.get(tobj.getSymbolID()), 0, 0, 200, 200);
-      if(pieces.get(tobj.getSymbolID())!=null){
       image(pieces.get(tobj.getSymbolID()), 0, 0, 200, 200);
-      }
       popMatrix();
       //    println("Position: "+tobj.getSymbolID(), tobj.getScreenX(width), tobj.getScreenY(height));
       //println(tobj.getSymbolID());
