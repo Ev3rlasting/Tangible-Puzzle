@@ -56,7 +56,7 @@ void draw() {
       translate(tobj.getScreenX(width), tobj.getScreenY(height));  
       rotate(0-tobj.getAngle());
       //image(pieces.get(tobj.getSymbolID()), 0, 0, 200, 200);
-      image(pieces.get(tobj.getSymbolID()), 0, 0, 200, 200);
+      image(pieces.get(tobj.getSymbolID()), -100, -100, 200, 200);
       popMatrix();
       //    println("Position: "+tobj.getSymbolID(), tobj.getScreenX(width), tobj.getScreenY(height));
       //println(tobj.getSymbolID());
