@@ -14,7 +14,7 @@ float table_size = 760;
 float scale_factor = 1;
 //TUIO Object linking to Pics
 void setup() {
-  size(1100, 800);
+  size(1100,800);
   // periodic updates
   if (!callback) {
     frameRate(60);
@@ -38,7 +38,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(200,200,200);
   //float obj_size = object_size*scale_factor; 
   //float cur_size = cursor_size*scale_factor; 
   ArrayList<TuioObject> tuioObjectList1 = tuioClient1.getTuioObjectList();
