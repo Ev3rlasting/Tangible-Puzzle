@@ -17,12 +17,16 @@ It requires two tabletops similar to this photo. They can be easily made by pape
 
 ## Dependent Software and Tools
 Building Tool: [Processing](https://processing.org)
+
 Computer Vision Engine: [reacTIVision](https://github.com/mkalten/reacTIVision)
+
 Mapping between Physical and Digital Objects: [TUIO](http://tuio.org/)
+
 Network & Multicasting [oscP5](http://www.sojamo.de/libraries/oscP5/)
 
 ## Guide
 Follow the steps (for one side):
+
 1. Locate your reacTIVision configuration file (right click the icon of 'reacTIVision.app', and choose 'Show Package Contents', the configuration file should be 'reacTIVision.app/Contents/Resources/reacTIVision.xml)
 
 2. In order to support globally-scoped Internet address (public address). Please set your reacTIVision.xml to 
