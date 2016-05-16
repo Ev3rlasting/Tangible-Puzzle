@@ -3,7 +3,8 @@ The Tangible Puzzle allows players to play jigsaw puzzle games over distance. It
 
 ## Playing Scenario
 ![Scenario](http://i.imgur.com/UxKoyV6.jpg "Scenario")
-A player is playing with the system. She can see the manipulations done both by herself and on the other side on the screen.
+
+A player is playing with the system. She can see the manipulations done both by herself and by the other side on the screen.
 
 ![Scenario](http://i.imgur.com/KSUmkq0.png "Scenario")
 
